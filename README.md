@@ -1,5 +1,5 @@
 # Autodriver
-Autodriver is a Windows tool that will assist the end-user with installing drivers on any of their systems. Ranging from a custom built PC to laptops individuall, without the worry of any malware, adware, etc.
+Autodriver is a Windows tool that will assist the end-user with installing drivers on any of their systems. Ranging from a custom built PC to laptops individually, without the worry of any malware, adware, etc.
 
 # Features
 * Automated installation of drivers / software 
