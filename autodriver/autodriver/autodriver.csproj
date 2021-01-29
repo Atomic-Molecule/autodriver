@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D495F96E-FE4A-431C-B27F-7CFEF5F8CF46}</ProjectGuid>
+    <ProjectGuid>{EFFFB50B-B8B6-4222-BEA5-5C3552C394E5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>autodriver</RootNamespace>
     <AssemblyName>autodriver</AssemblyName>
