@@ -15,12 +15,9 @@ using System.Windows.Shapes;
 
 namespace autodriver
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class AutodriverMainWindow : Window
     {
-        public MainWindow()
+        public AutodriverMainWindow()
         {
             InitializeComponent();
         }
