@@ -17,3 +17,4 @@ Autodriver is a Windows tool that will assist the end-user with installing drive
 8. Hover over Add > Click "Existing Item"
 9. Open `Autodriver.xaml.cs`
 10. The project will load
+### This will be fixed so you can just File > Open Solution > Click `autodriver.sln`
