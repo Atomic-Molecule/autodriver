@@ -19,15 +19,32 @@ namespace autodriver {
     public partial class HardwareInformationWindow : Window {
         public HardwareInformationWindow() {
             InitializeComponent();
-
+            HardwareInformationWindow_Load();
+        }
+        private void HardwareInformationWindow_Load() {
             HardwareInformation.getCpuInformation();
+            HardwareInformation.getGpuInformation();
+            HardwareInformation.getMotherboardInformation();
+            HardwareInformation.getBiosInformation();
+
             processorName.Content = HardwareInformation.cpuName;
             processorGeneration.Content = HardwareInformation.cpuArchitecture + "th Generation";
-            processorCores.Content = HardwareInformation.cpuCores;
+            processorCores.Content = HardwareInformation.cpuCores + " Cores";
             processorLogicalProcessors.Content = HardwareInformation.cpuLogicalProcessors;
             processorThreads.Content = HardwareInformation.cpuThreads;
             processorStatus.Content = HardwareInformation.cpuStatus;
             processorSerialNumber.Content = HardwareInformation.cpuSerialNumber;
+
+            graphicsCard.Content = HardwareInformation.gpuName;
+            graphicsResolution.Content = HardwareInformation.gpuResolution;
+            graphicsDriverVersion.Content = HardwareInformation.gpuDriverVersion;
+
+            motherboardName.Content = HardwareInformation.motherboardName;
+            motherboardModel.Content = HardwareInformation.motherboardModel;
+            motherboardManufacturer.Content = HardwareInformation.motherboardManufacturer;
+            biosName.Content = HardwareInformation.biosName;
+            biosManufacturer.Content = HardwareInformation.biosManufacturer;
+            biosVersion.Content = HardwareInformation.biosVersion;
         }
     }
 }

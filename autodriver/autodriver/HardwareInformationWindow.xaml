@@ -5,24 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:autodriver"
         mc:Ignorable="d"
-        Title="Hardware Information" Height="450" Width="800">
-    <Grid>
+        Title="Hardware Information" Height="385.773" Width="800">
+    <Grid Margin="0,0,0,1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="processorLabel" Content="Processor" HorizontalAlignment="Left" Margin="24,27,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="processorName" Content="processorName" HorizontalAlignment="Left" Margin="90,27,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="generationLabel" Content="Processor Generation" HorizontalAlignment="Left" Margin="24,53,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="processorGeneration" Content="processorGeneration" HorizontalAlignment="Left" Margin="152,53,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="coresLabel" Content="Number of Cores" HorizontalAlignment="Left" Margin="24,79,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="processorCores" Content="processorCores" HorizontalAlignment="Left" Margin="130,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.628,0.565"/>
-        <Label x:Name="logicalLabel" Content="Number of Logical Processors" HorizontalAlignment="Left" Margin="24,105,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="processorLogicalProcessors" Content="processorLogicalProcessors" HorizontalAlignment="Left" Margin="197,105,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="threadsLabel" Content="Number of CPU Threads" HorizontalAlignment="Left" Margin="24,131,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="processorThreads" Content="processorThreads" HorizontalAlignment="Left" Margin="167,131,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="statusLabel" Content="Processor Status" HorizontalAlignment="Left" Margin="24,157,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="processorStatus" Content="processorStatus" HorizontalAlignment="Left" Margin="126,157,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="serialNumberLabel" Content="Processor Serial Number" HorizontalAlignment="Left" Margin="24,183,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="processorSerialNumber" Content="processorSerialNumber" HorizontalAlignment="Left" Margin="164,183,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorLabel" Content="Processor:" HorizontalAlignment="Left" Margin="5,34,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorName" Content="processorName" HorizontalAlignment="Left" Margin="71,34,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="generationLabel" Content="Generation:" HorizontalAlignment="Left" Margin="5,60,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorGeneration" Content="processorGeneration" HorizontalAlignment="Left" Margin="74,60,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="coresLabel" Content="Number of Cores:" HorizontalAlignment="Left" Margin="5,86,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorCores" Content="processorCores" HorizontalAlignment="Left" Margin="106,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.628,0.565"/>
+        <Label x:Name="logicalLabel" Content="Logical Processors:" HorizontalAlignment="Left" Margin="5,112,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorLogicalProcessors" Content="processorLogicalProcessors" HorizontalAlignment="Left" Margin="106,112,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="threadsLabel" Content="Threads:" HorizontalAlignment="Left" Margin="5,138,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorThreads" Content="processorThreads" HorizontalAlignment="Left" Margin="53,138,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="statusLabel" Content="Status:" HorizontalAlignment="Left" Margin="5,164,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorStatus" Content="processorStatus" HorizontalAlignment="Left" Margin="47,164,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="serialNumberLabel" Content="Serial Number:" HorizontalAlignment="Left" Margin="5,190,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorSerialNumber" Content="processorSerialNumber" HorizontalAlignment="Left" Margin="96,190,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="cpuInformationLabel" Content="CPU INFORMATION" HorizontalAlignment="Left" Margin="5,-3,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="graphicsInformationLabel" Content="GRAPHICS INFORMATION" HorizontalAlignment="Left" Margin="5,221,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="graphicsCardLabel" Content="Graphics Card:" HorizontalAlignment="Left" Margin="5,258,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.428,-0.031"/>
+        <Label x:Name="graphicsCard" Content="graphicsCard" HorizontalAlignment="Left" Margin="90,258,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.428,-0.031"/>
+        <Label x:Name="graphicsResolutionLabel" Content="Resolution:" HorizontalAlignment="Left" Margin="5,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.428,-0.031"/>
+        <Label x:Name="graphicsResolution" Content="graphicsResolution" HorizontalAlignment="Left" Margin="71,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.428,-0.031"/>
+        <Label x:Name="graphicsDriverVersionLabel" Content="Driver Version:" HorizontalAlignment="Left" Margin="5,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.428,-0.031"/>
+        <Label x:Name="graphicsDriverVersion" Content="driverVersion" HorizontalAlignment="Left" Margin="90,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.428,-0.031"/>
+        <Label x:Name="motherboardInformation" Content="MOTHERBOARD INFORMATION" HorizontalAlignment="Left" Margin="351,0,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="motherboardNameLabel" Content="Motherboard: " HorizontalAlignment="Left" Margin="351,37,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="motherboardName" Content="motherboardName" HorizontalAlignment="Left" Margin="429,37,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="motherboardNameLabel_Copy" Content="Motherboard Model:" HorizontalAlignment="Left" Margin="351,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="motherboardModel" Content="motherboardModel" HorizontalAlignment="Left" Margin="464,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="motherboardManufacturerLabel" Content="Motherboard Manufacturer:" HorizontalAlignment="Left" Margin="351,89,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="motherboardManufacturer" Content="motherboardManufacturer" HorizontalAlignment="Left" Margin="501,89,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosNameLabel" Content="BIOS:" HorizontalAlignment="Left" Margin="351,115,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosName" Content="biosName" HorizontalAlignment="Left" Margin="389,115,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosManufacturerLabel" Content="BIOS Manufacturer:" HorizontalAlignment="Left" Margin="351,138,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosManufacturer" Content="biosManufacturer" HorizontalAlignment="Left" Margin="464,138,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosVersionLabel" Content="BIOS Version:" HorizontalAlignment="Left" Margin="351,164,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosVersion" Content="biosVersion" HorizontalAlignment="Left" Margin="429,164,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
