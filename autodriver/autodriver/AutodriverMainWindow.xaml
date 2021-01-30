@@ -10,6 +10,7 @@
         <Button x:Name="checkDrivers" Content="Check Drivers" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="86"/>
         <Button x:Name="installedDrivers" Content="Installed Drivers" HorizontalAlignment="Left" Margin="237,10,0,0" VerticalAlignment="Top" Width="90"/>
         <Button x:Name="driverList" Content="Driver List" HorizontalAlignment="Left" Margin="127,10,0,0" VerticalAlignment="Top" Width="86"/>
+        <Button x:Name="getHardwareInfo" Content="Hardware" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="86" Click="getHardwareInfo_Click"/>
 
     </Grid>
 </Window>
