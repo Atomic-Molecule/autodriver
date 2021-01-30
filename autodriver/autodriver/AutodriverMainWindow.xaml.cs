@@ -13,13 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace autodriver
-{
-    public partial class AutodriverMainWindow : Window
-    {
-        public AutodriverMainWindow()
-        {
+namespace autodriver {
+    public partial class AutodriverMainWindow : Window {
+        public AutodriverMainWindow() {
             InitializeComponent();
+        }
+
+        private void getHardwareInfo_Click(object sender, RoutedEventArgs e) {
+            HardWareInformation.getHardwareInformation();
         }
     }
 }
