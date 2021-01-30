@@ -68,9 +68,16 @@
       <DependentUpon>AutodriverMainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="HardwareInformationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HardwareInformation.cs" />
+    <Compile Include="HardwareInformationWindow.xaml.cs">
+      <DependentUpon>HardwareInformationWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

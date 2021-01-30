@@ -1,0 +1,28 @@
+﻿<Window x:Class="autodriver.HardwareInformationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:autodriver"
+        mc:Ignorable="d"
+        Title="Hardware Information" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="processorLabel" Content="Processor" HorizontalAlignment="Left" Margin="24,27,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorName" Content="processorName" HorizontalAlignment="Left" Margin="90,27,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="generationLabel" Content="Processor Generation" HorizontalAlignment="Left" Margin="24,53,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorGeneration" Content="processorGeneration" HorizontalAlignment="Left" Margin="152,53,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="coresLabel" Content="Number of Cores" HorizontalAlignment="Left" Margin="24,79,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorCores" Content="processorCores" HorizontalAlignment="Left" Margin="130,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.628,0.565"/>
+        <Label x:Name="logicalLabel" Content="Number of Logical Processors" HorizontalAlignment="Left" Margin="24,105,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorLogicalProcessors" Content="processorLogicalProcessors" HorizontalAlignment="Left" Margin="197,105,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="threadsLabel" Content="Number of CPU Threads" HorizontalAlignment="Left" Margin="24,131,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorThreads" Content="processorThreads" HorizontalAlignment="Left" Margin="167,131,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="statusLabel" Content="Processor Status" HorizontalAlignment="Left" Margin="24,157,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorStatus" Content="processorStatus" HorizontalAlignment="Left" Margin="126,157,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="serialNumberLabel" Content="Processor Serial Number" HorizontalAlignment="Left" Margin="24,183,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="processorSerialNumber" Content="processorSerialNumber" HorizontalAlignment="Left" Margin="164,183,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

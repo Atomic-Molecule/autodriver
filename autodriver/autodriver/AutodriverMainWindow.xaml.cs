@@ -20,7 +20,8 @@ namespace autodriver {
         }
 
         private void getHardwareInfo_Click(object sender, RoutedEventArgs e) {
-            HardWareInformation.getHardwareInformation();
+            var HardwareInformationWindow = new HardwareInformationWindow();
+            HardwareInformationWindow.Show();
         }
     }
 }
