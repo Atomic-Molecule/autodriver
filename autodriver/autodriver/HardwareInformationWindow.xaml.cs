@@ -41,9 +41,8 @@ namespace autodriver {
 
             motherboardName.Content = HardwareInformation.motherboardName;
             motherboardManufacturer.Content = HardwareInformation.motherboardManufacturer;
-            biosName.Content = HardwareInformation.biosName;
             biosManufacturer.Content = HardwareInformation.biosManufacturer;
-            biosVersion.Content = HardwareInformation.biosVersion;
+            biosVersion.Content = "v" + HardwareInformation.biosVersion;
         }
     }
 }

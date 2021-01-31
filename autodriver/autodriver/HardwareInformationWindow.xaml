@@ -38,10 +38,8 @@
         <Label x:Name="motherboardManufacturerLabel" Content="Motherboard Manufacturer:" HorizontalAlignment="Left" Margin="351,63,0,0" VerticalAlignment="Top"/>
         <Label x:Name="motherboardManufacturer" Content="motherboardManufacturer" HorizontalAlignment="Left" Margin="501,63,0,0" VerticalAlignment="Top"/>
         <Label x:Name="biosNameLabel" Content="BIOS:" HorizontalAlignment="Left" Margin="351,89,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="biosName" Content="biosName" HorizontalAlignment="Left" Margin="389,89,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosVersion" Content="biosVersion" HorizontalAlignment="Left" Margin="388,89,0,0" VerticalAlignment="Top"/>
         <Label x:Name="biosManufacturerLabel" Content="BIOS Manufacturer:" HorizontalAlignment="Left" Margin="351,112,0,0" VerticalAlignment="Top"/>
         <Label x:Name="biosManufacturer" Content="biosManufacturer" HorizontalAlignment="Left" Margin="464,112,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="biosVersionLabel" Content="BIOS Version:" HorizontalAlignment="Left" Margin="351,138,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="biosVersion" Content="biosVersion" HorizontalAlignment="Left" Margin="429,138,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

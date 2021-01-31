@@ -81,9 +81,8 @@ public class HardwareInformation {
 		public static void getBiosInformation() {
 			ManagementObjectSearcher getBiosInformation = new ManagementObjectSearcher("Select * From Win32_BIOS");
 			foreach (ManagementObject info in getBiosInformation.Get()) {
-				biosName = (string) info["Name"];
 				biosManufacturer = (string) info["Manufacturer"];
-				biosVersion = (string) info["Version"];
+				biosVersion = (string) info["Name"];
 			}
 		}
 
