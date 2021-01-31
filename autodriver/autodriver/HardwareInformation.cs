@@ -26,7 +26,6 @@ public class HardwareInformation {
 
 		// MOTHERBOARD INFORMATION
 		public static string motherboardName;
-		public static string motherboardModel;
 		public static string motherboardManufacturer;
 		// MOTHERBOARD INFORMAITON
 
@@ -70,8 +69,7 @@ public class HardwareInformation {
 		public static void getMotherboardInformation() {
 			ManagementObjectSearcher getMotherboardInformation = new ManagementObjectSearcher("Select * From Win32_BaseBoard");
 			foreach (ManagementObject info in getMotherboardInformation.Get()) {
-				motherboardName = (string) info["Name"]; // Needs fixing - displays "Baseboard"
-				motherboardModel = (string) info["Model"]; // Needs fixing  - displays nothing
+				motherboardName = (string) info["Product"];
 				motherboardManufacturer = (string) info["Manufacturer"];
 			}
 		}

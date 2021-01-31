@@ -35,15 +35,13 @@
         <Label x:Name="motherboardInformation" Content="MOTHERBOARD INFORMATION" HorizontalAlignment="Left" Margin="351,0,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
         <Label x:Name="motherboardNameLabel" Content="Motherboard: " HorizontalAlignment="Left" Margin="351,37,0,0" VerticalAlignment="Top"/>
         <Label x:Name="motherboardName" Content="motherboardName" HorizontalAlignment="Left" Margin="429,37,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="motherboardNameLabel_Copy" Content="Motherboard Model:" HorizontalAlignment="Left" Margin="351,63,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="motherboardModel" Content="motherboardModel" HorizontalAlignment="Left" Margin="464,63,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="motherboardManufacturerLabel" Content="Motherboard Manufacturer:" HorizontalAlignment="Left" Margin="351,89,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="motherboardManufacturer" Content="motherboardManufacturer" HorizontalAlignment="Left" Margin="501,89,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="biosNameLabel" Content="BIOS:" HorizontalAlignment="Left" Margin="351,115,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="biosName" Content="biosName" HorizontalAlignment="Left" Margin="389,115,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="biosManufacturerLabel" Content="BIOS Manufacturer:" HorizontalAlignment="Left" Margin="351,138,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="biosManufacturer" Content="biosManufacturer" HorizontalAlignment="Left" Margin="464,138,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="biosVersionLabel" Content="BIOS Version:" HorizontalAlignment="Left" Margin="351,164,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="biosVersion" Content="biosVersion" HorizontalAlignment="Left" Margin="429,164,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="motherboardManufacturerLabel" Content="Motherboard Manufacturer:" HorizontalAlignment="Left" Margin="351,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="motherboardManufacturer" Content="motherboardManufacturer" HorizontalAlignment="Left" Margin="501,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosNameLabel" Content="BIOS:" HorizontalAlignment="Left" Margin="351,89,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosName" Content="biosName" HorizontalAlignment="Left" Margin="389,89,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosManufacturerLabel" Content="BIOS Manufacturer:" HorizontalAlignment="Left" Margin="351,112,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosManufacturer" Content="biosManufacturer" HorizontalAlignment="Left" Margin="464,112,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosVersionLabel" Content="BIOS Version:" HorizontalAlignment="Left" Margin="351,138,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="biosVersion" Content="biosVersion" HorizontalAlignment="Left" Margin="429,138,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

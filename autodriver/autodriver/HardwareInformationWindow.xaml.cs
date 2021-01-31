@@ -40,7 +40,6 @@ namespace autodriver {
             graphicsDriverVersion.Content = HardwareInformation.gpuDriverVersion;
 
             motherboardName.Content = HardwareInformation.motherboardName;
-            motherboardModel.Content = HardwareInformation.motherboardModel;
             motherboardManufacturer.Content = HardwareInformation.motherboardManufacturer;
             biosName.Content = HardwareInformation.biosName;
             biosManufacturer.Content = HardwareInformation.biosManufacturer;
