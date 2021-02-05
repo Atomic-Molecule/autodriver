@@ -44,33 +44,54 @@ public class HardwareInformation {
 		// STORAGE INFORMATION
 
         public static void getCpuInformation() {
-			ManagementObjectSearcher getCpuInformation = new ManagementObjectSearcher("Select * From Win32_Processor");
-			foreach (ManagementObject info in getCpuInformation.Get()) {
-                cpuName = (string) info["Name"];
-				cpuSerialNumber = (string) info["SerialNumber"];
-				cpuStatus = (string) info["Status"];
-				cpuVirtualisationEnabled = (bool) info["VirtualizationFirmwareEnabled"];
-				cpuArchitecture = (UInt16) info["Architecture"];
-				cpuCores = (UInt32) info["NumberOfCores"];
-				cpuLogicalProcessors = (UInt32) info["NumberOfLogicalProcessors"];
-				cpuThreads = (UInt32) info["ThreadCount"];
+			try
+			{
+				ManagementObjectSearcher getCpuInformation = new ManagementObjectSearcher("Select * From Win32_Processor");
+				foreach (ManagementObject info in getCpuInformation.Get())
+				{
+					cpuName = (string)info["Name"];
+					cpuSerialNumber = (string)info["SerialNumber"];
+					cpuStatus = (string)info["Status"];
+					cpuVirtualisationEnabled = (bool)info["VirtualizationFirmwareEnabled"];
+					cpuArchitecture = (UInt16)info["Architecture"];
+					cpuCores = (UInt32)info["NumberOfCores"];
+					cpuLogicalProcessors = (UInt32)info["NumberOfLogicalProcessors"];
+					cpuThreads = (UInt32)info["ThreadCount"];
+				}
+			}
+			catch (ManagementException e) { 
+				// Error window
 			}
 		}
 
 		public static void getGpuInformation() {
-			ManagementObjectSearcher getGpuInformation = new ManagementObjectSearcher("Select * From Win32_VideoController");
-			foreach (ManagementObject info in getGpuInformation.Get()) {
-				gpuName = (string) info["Name"];
-				gpuResolution = (string) info["VideoModeDescription"];
-				gpuDriverVersion = (string) info["DriverVersion"];
+			try
+			{
+				ManagementObjectSearcher getGpuInformation = new ManagementObjectSearcher("Select * From Win32_VideoController");
+				foreach (ManagementObject info in getGpuInformation.Get())
+				{
+					gpuName = (string)info["Name"];
+					gpuResolution = (string)info["VideoModeDescription"];
+					gpuDriverVersion = (string)info["DriverVersion"];
+				}
+			}
+			catch (ManagementException e) { 
+				// Error window
 			}
 		}
 
 		public static void getMotherboardInformation() {
-			ManagementObjectSearcher getMotherboardInformation = new ManagementObjectSearcher("Select * From Win32_BaseBoard");
-			foreach (ManagementObject info in getMotherboardInformation.Get()) {
-				motherboardName = (string) info["Product"];
-				motherboardManufacturer = (string) info["Manufacturer"];
+			try
+			{
+				ManagementObjectSearcher getMotherboardInformation = new ManagementObjectSearcher("Select * From Win32_BaseBoard");
+				foreach (ManagementObject info in getMotherboardInformation.Get())
+				{
+					motherboardName = (string)info["Product"];
+					motherboardManufacturer = (string)info["Manufacturer"];
+				}
+			}
+			catch (ManagementException e) { 
+				// error window
 			}
 		}
 
@@ -79,18 +100,22 @@ public class HardwareInformation {
 		}
 
 		public static void getBiosInformation() {
-			ManagementObjectSearcher getBiosInformation = new ManagementObjectSearcher("Select * From Win32_BIOS");
-			foreach (ManagementObject info in getBiosInformation.Get()) {
-				biosManufacturer = (string) info["Manufacturer"];
-				biosVersion = (string) info["Name"];
+			try
+			{
+				ManagementObjectSearcher getBiosInformation = new ManagementObjectSearcher("Select * From Win32_BIOS");
+				foreach (ManagementObject info in getBiosInformation.Get())
+				{
+					biosManufacturer = (string)info["Manufacturer"];
+					biosVersion = (string)info["Name"];
+				}
+			}
+			catch (ManagementException e) { 
+				// Error window
 			}
 		}
 
 		public static void getStorageInformation() {
-			foreach (var drive in DriveInfo.GetDrives()) {
-				driveNames.Add(drive.Name);
-				driveSize.Add(drive.TotalSize);
-			}
+			//
 		}
 	}
 }
